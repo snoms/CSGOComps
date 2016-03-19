@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC4852551C9DB8D800F7AE22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4852541C9DB8D800F7AE22 /* AppDelegate.swift */; };
+		CC4852571C9DB8D800F7AE22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4852561C9DB8D800F7AE22 /* ViewController.swift */; };
+		CC48525A1C9DB8D800F7AE22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4852581C9DB8D800F7AE22 /* Main.storyboard */; };
+		CC48525C1C9DB8D800F7AE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC48525B1C9DB8D800F7AE22 /* Assets.xcassets */; };
+		CC48525F1C9DB8D800F7AE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC48525D1C9DB8D800F7AE22 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC4852511C9DB8D800F7AE22 /* CS:GO Comparisons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS:GO Comparisons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4852541C9DB8D800F7AE22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC4852561C9DB8D800F7AE22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC4852591C9DB8D800F7AE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC48525B1C9DB8D800F7AE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC48525E1C9DB8D800F7AE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC4852601C9DB8D800F7AE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC48524E1C9DB8D800F7AE22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC4852481C9DB8D800F7AE22 = {
+			isa = PBXGroup;
+			children = (
+				CC4852531C9DB8D800F7AE22 /* CS:GO Comparisons */,
+				CC4852521C9DB8D800F7AE22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC4852521C9DB8D800F7AE22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC4852511C9DB8D800F7AE22 /* CS:GO Comparisons.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC4852531C9DB8D800F7AE22 /* CS:GO Comparisons */ = {
+			isa = PBXGroup;
+			children = (
+				CC4852541C9DB8D800F7AE22 /* AppDelegate.swift */,
+				CC4852561C9DB8D800F7AE22 /* ViewController.swift */,
+				CC4852581C9DB8D800F7AE22 /* Main.storyboard */,
+				CC48525B1C9DB8D800F7AE22 /* Assets.xcassets */,
+				CC48525D1C9DB8D800F7AE22 /* LaunchScreen.storyboard */,
+				CC4852601C9DB8D800F7AE22 /* Info.plist */,
+			);
+			path = "CS:GO Comparisons";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC4852501C9DB8D800F7AE22 /* CS:GO Comparisons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC4852631C9DB8D800F7AE22 /* Build configuration list for PBXNativeTarget "CS:GO Comparisons" */;
+			buildPhases = (
+				CC48524D1C9DB8D800F7AE22 /* Sources */,
+				CC48524E1C9DB8D800F7AE22 /* Frameworks */,
+				CC48524F1C9DB8D800F7AE22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CS:GO Comparisons";
+			productName = "CS:GO Comparisons";
+			productReference = CC4852511C9DB8D800F7AE22 /* CS:GO Comparisons.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC4852491C9DB8D800F7AE22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = bob;
+				TargetAttributes = {
+					CC4852501C9DB8D800F7AE22 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9B4995VYB9;
+					};
+				};
+			};
+			buildConfigurationList = CC48524C1C9DB8D800F7AE22 /* Build configuration list for PBXProject "CS:GO Comparisons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC4852481C9DB8D800F7AE22;
+			productRefGroup = CC4852521C9DB8D800F7AE22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC4852501C9DB8D800F7AE22 /* CS:GO Comparisons */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC48524F1C9DB8D800F7AE22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC48525F1C9DB8D800F7AE22 /* LaunchScreen.storyboard in Resources */,
+				CC48525C1C9DB8D800F7AE22 /* Assets.xcassets in Resources */,
+				CC48525A1C9DB8D800F7AE22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC48524D1C9DB8D800F7AE22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4852571C9DB8D800F7AE22 /* ViewController.swift in Sources */,
+				CC4852551C9DB8D800F7AE22 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC4852581C9DB8D800F7AE22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC4852591C9DB8D800F7AE22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC48525D1C9DB8D800F7AE22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC48525E1C9DB8D800F7AE22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC4852611C9DB8D800F7AE22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC4852621C9DB8D800F7AE22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC4852641C9DB8D800F7AE22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CS:GO Comparisons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.CS-GO-Comparisons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC4852651C9DB8D800F7AE22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CS:GO Comparisons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.CS-GO-Comparisons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC48524C1C9DB8D800F7AE22 /* Build configuration list for PBXProject "CS:GO Comparisons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4852611C9DB8D800F7AE22 /* Debug */,
+				CC4852621C9DB8D800F7AE22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC4852631C9DB8D800F7AE22 /* Build configuration list for PBXNativeTarget "CS:GO Comparisons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4852641C9DB8D800F7AE22 /* Debug */,
+				CC4852651C9DB8D800F7AE22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC4852491C9DB8D800F7AE22 /* Project object */;
+}
