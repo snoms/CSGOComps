@@ -12,9 +12,100 @@
 		CC48525A1C9DB8D800F7AE22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4852581C9DB8D800F7AE22 /* Main.storyboard */; };
 		CC48525C1C9DB8D800F7AE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC48525B1C9DB8D800F7AE22 /* Assets.xcassets */; };
 		CC48525F1C9DB8D800F7AE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC48525D1C9DB8D800F7AE22 /* LaunchScreen.storyboard */; };
+		CC4852671C9DC73E00F7AE22 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4852661C9DC73E00F7AE22 /* ResultViewController.swift */; };
+		CC4852691C9DEA7000F7AE22 /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4852681C9DEA7000F7AE22 /* PlayerData.swift */; };
+		CC48526D1C9DFDAF00F7AE22 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48526C1C9DFDAF00F7AE22 /* PlayerManager.swift */; };
+		CC7BEE1E1CA0A06E00A9E24E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7BEE1D1CA0A06E00A9E24E /* ChartViewController.swift */; };
+		CCABB6F81CA1767500F2A0E0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3E2DE31CA0A38F00602E26 /* Charts.framework */; };
+		CCABB6F91CA1767500F2A0E0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC3E2DE31CA0A38F00602E26 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCABB6FD1CA1816400F2A0E0 /* GroupBarChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCABB6FC1CA1816400F2A0E0 /* GroupBarChartController.swift */; };
+		CCABB7161CA181F500F2A0E0 /* SwiftCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCABB7111CA181A000F2A0E0 /* SwiftCharts.framework */; };
+		CCABB7171CA181F500F2A0E0 /* SwiftCharts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCABB7111CA181A000F2A0E0 /* SwiftCharts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CC3E2DE21CA0A38F00602E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC3E2DDB1CA0A38E00602E26 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		CC3E2DE41CA0A38F00602E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC3E2DDB1CA0A38E00602E26 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		CC3E2DE61CA0A38F00602E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC3E2DDB1CA0A38E00602E26 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		CC3E2DE81CA0A38F00602E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC3E2DDB1CA0A38E00602E26 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		CCABB6FA1CA1767500F2A0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC3E2DDB1CA0A38E00602E26 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		CCABB7101CA181A000F2A0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCABB70A1CA181A000F2A0E0 /* SwiftCharts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06405DA61B8AA74700A689FF;
+			remoteInfo = SwiftCharts;
+		};
+		CCABB7121CA181A000F2A0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCABB70A1CA181A000F2A0E0 /* SwiftCharts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06342AC11B8AAD7F001C9F5D;
+			remoteInfo = Examples;
+		};
+		CCABB7141CA181A000F2A0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCABB70A1CA181A000F2A0E0 /* SwiftCharts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22E7020F1BF5B8EC00C19675;
+			remoteInfo = "SwiftCharts tvOS";
+		};
+		CCABB7181CA181F500F2A0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCABB70A1CA181A000F2A0E0 /* SwiftCharts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06405DA51B8AA74700A689FF;
+			remoteInfo = SwiftCharts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC7BEF711CA0A15200A9E24E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CCABB6F91CA1767500F2A0E0 /* Charts.framework in Embed Frameworks */,
+				CCABB7171CA181F500F2A0E0 /* SwiftCharts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CC3E2DDB1CA0A38E00602E26 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../Downloads/ios-charts-master-2/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 		CC4852511C9DB8D800F7AE22 /* CS:GO Comparisons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS:GO Comparisons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4852541C9DB8D800F7AE22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC4852561C9DB8D800F7AE22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +113,12 @@
 		CC48525B1C9DB8D800F7AE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC48525E1C9DB8D800F7AE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4852601C9DB8D800F7AE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4852661C9DC73E00F7AE22 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		CC4852681C9DEA7000F7AE22 /* PlayerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
+		CC48526C1C9DFDAF00F7AE22 /* PlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		CC7BEE1D1CA0A06E00A9E24E /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		CCABB6FC1CA1816400F2A0E0 /* GroupBarChartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBarChartController.swift; sourceTree = "<group>"; };
+		CCABB70A1CA181A000F2A0E0 /* SwiftCharts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftCharts.xcodeproj; path = "../../../../Downloads/SwiftCharts-master/SwiftCharts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +126,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCABB6F81CA1767500F2A0E0 /* Charts.framework in Frameworks */,
+				CCABB7161CA181F500F2A0E0 /* SwiftCharts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC3E2DDC1CA0A38E00602E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC3E2DE31CA0A38F00602E26 /* Charts.framework */,
+				CC3E2DE51CA0A38F00602E26 /* Charts.framework */,
+				CC3E2DE71CA0A38F00602E26 /* Charts.framework */,
+				CC3E2DE91CA0A38F00602E26 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CC4852481C9DB8D800F7AE22 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +164,31 @@
 		CC4852531C9DB8D800F7AE22 /* CS:GO Comparisons */ = {
 			isa = PBXGroup;
 			children = (
+				CCABB70A1CA181A000F2A0E0 /* SwiftCharts.xcodeproj */,
+				CC3E2DDB1CA0A38E00602E26 /* Charts.xcodeproj */,
 				CC4852541C9DB8D800F7AE22 /* AppDelegate.swift */,
 				CC4852561C9DB8D800F7AE22 /* ViewController.swift */,
+				CCABB6FC1CA1816400F2A0E0 /* GroupBarChartController.swift */,
+				CC4852661C9DC73E00F7AE22 /* ResultViewController.swift */,
+				CC7BEE1D1CA0A06E00A9E24E /* ChartViewController.swift */,
+				CC4852681C9DEA7000F7AE22 /* PlayerData.swift */,
+				CC48526C1C9DFDAF00F7AE22 /* PlayerManager.swift */,
 				CC4852581C9DB8D800F7AE22 /* Main.storyboard */,
 				CC48525B1C9DB8D800F7AE22 /* Assets.xcassets */,
 				CC48525D1C9DB8D800F7AE22 /* LaunchScreen.storyboard */,
 				CC4852601C9DB8D800F7AE22 /* Info.plist */,
 			);
 			path = "CS:GO Comparisons";
+			sourceTree = "<group>";
+		};
+		CCABB70B1CA181A000F2A0E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCABB7111CA181A000F2A0E0 /* SwiftCharts.framework */,
+				CCABB7131CA181A000F2A0E0 /* Examples.app */,
+				CCABB7151CA181A000F2A0E0 /* SwiftCharts.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +201,13 @@
 				CC48524D1C9DB8D800F7AE22 /* Sources */,
 				CC48524E1C9DB8D800F7AE22 /* Frameworks */,
 				CC48524F1C9DB8D800F7AE22 /* Resources */,
+				CC7BEF711CA0A15200A9E24E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CCABB6FB1CA1767500F2A0E0 /* PBXTargetDependency */,
+				CCABB7191CA181F500F2A0E0 /* PBXTargetDependency */,
 			);
 			name = "CS:GO Comparisons";
 			productName = "CS:GO Comparisons";
@@ -111,12 +241,74 @@
 			mainGroup = CC4852481C9DB8D800F7AE22;
 			productRefGroup = CC4852521C9DB8D800F7AE22 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CC3E2DDC1CA0A38E00602E26 /* Products */;
+					ProjectRef = CC3E2DDB1CA0A38E00602E26 /* Charts.xcodeproj */;
+				},
+				{
+					ProductGroup = CCABB70B1CA181A000F2A0E0 /* Products */;
+					ProjectRef = CCABB70A1CA181A000F2A0E0 /* SwiftCharts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CC4852501C9DB8D800F7AE22 /* CS:GO Comparisons */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CC3E2DE31CA0A38F00602E26 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = CC3E2DE21CA0A38F00602E26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC3E2DE51CA0A38F00602E26 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = CC3E2DE41CA0A38F00602E26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC3E2DE71CA0A38F00602E26 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = CC3E2DE61CA0A38F00602E26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC3E2DE91CA0A38F00602E26 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = CC3E2DE81CA0A38F00602E26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCABB7111CA181A000F2A0E0 /* SwiftCharts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftCharts.framework;
+			remoteRef = CCABB7101CA181A000F2A0E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCABB7131CA181A000F2A0E0 /* Examples.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Examples.app;
+			remoteRef = CCABB7121CA181A000F2A0E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCABB7151CA181A000F2A0E0 /* SwiftCharts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftCharts.framework;
+			remoteRef = CCABB7141CA181A000F2A0E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CC48524F1C9DB8D800F7AE22 /* Resources */ = {
@@ -137,11 +329,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4852571C9DB8D800F7AE22 /* ViewController.swift in Sources */,
+				CC48526D1C9DFDAF00F7AE22 /* PlayerManager.swift in Sources */,
 				CC4852551C9DB8D800F7AE22 /* AppDelegate.swift in Sources */,
+				CC4852691C9DEA7000F7AE22 /* PlayerData.swift in Sources */,
+				CC4852671C9DC73E00F7AE22 /* ResultViewController.swift in Sources */,
+				CC7BEE1E1CA0A06E00A9E24E /* ChartViewController.swift in Sources */,
+				CCABB6FD1CA1816400F2A0E0 /* GroupBarChartController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCABB6FB1CA1767500F2A0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = CCABB6FA1CA1767500F2A0E0 /* PBXContainerItemProxy */;
+		};
+		CCABB7191CA181F500F2A0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftCharts;
+			targetProxy = CCABB7181CA181F500F2A0E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CC4852581C9DB8D800F7AE22 /* Main.storyboard */ = {
@@ -250,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "CS:GO Comparisons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.CS-GO-Comparisons";
@@ -261,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "CS:GO Comparisons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.CS-GO-Comparisons";
@@ -287,6 +499,7 @@
 				CC4852651C9DB8D800F7AE22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
