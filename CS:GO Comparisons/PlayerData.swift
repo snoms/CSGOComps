@@ -13,14 +13,14 @@ public class Player {
     public var steamID: String
 //    var userID: String
     
-    public var totalKills: Int
-    public var totalDeaths: Int
-    public var timePlayed: Int
+    public var totalKills: Double
+    public var totalDeaths: Double
+    public var timePlayed: Double
     
     public var gunStats: Array<Gun>
     
-    public var totalShots: Int
-    public var totalHits: Int
+    public var totalShots: Double
+    public var totalHits: Double
     
     public init(steamID: String) {
         self.steamID = steamID

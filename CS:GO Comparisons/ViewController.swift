@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         var player2 = Player(steamID: "")
         
         if inputField1.text != "" {
-            player1 = performGetRequest(0)
-            PlayerManager.sharedInstance.newPlayer(player1)
+            performGetRequest(0)
+//            PlayerManager.sharedInstance.newPlayer(player1)
             print(player1.totalKills)
             print("if field 1 ok")
             print(PlayerManager.sharedInstance.Players[0].totalKills)
@@ -34,12 +34,12 @@ class ViewController: UIViewController {
         }
         
         if inputField2.text != "" {
-            player2 = performGetRequest(1)
-            PlayerManager.sharedInstance.newPlayer(player2)
+            performGetRequest(1)
+//            PlayerManager.sharedInstance.newPlayer(player2)
         }
 //        performGetRequest()
 //        showResults()
-        print(player2.totalKills)
+        print(PlayerManager.sharedInstance.Players[1].totalKills)
         //
         
         
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
 
 
 
-    func performGetRequest(playerField: Int) -> Player {
+    func performGetRequest(playerField: Int) {
         
         var playerID = ""
         
@@ -80,8 +80,7 @@ class ViewController: UIViewController {
         let playerURL = NSURL(string: playerstring)
 //        let player2URL = NSURL(string: player2string)
         
-        let player = Player(steamID: "76561197970607640")
-        
+//        let player = Player(steamID: "76561197970607640")
         let session = NSURLSession.sharedSession()
         
         session.dataTaskWithURL(playerURL!, completionHandler: { data, response, error in
@@ -105,23 +104,23 @@ class ViewController: UIViewController {
                         
                         if stat["name"] as! String == "total_kills" {
                             print("total kills found")
-                            PlayerManager.sharedInstance.Players[playerField].totalKills = stat["value"] as! Int
+                            PlayerManager.sharedInstance.Players[playerField].totalKills = stat["value"] as! Double
                         }
                         if stat["name"] as! String == "total_deaths" {
                             print("total deaths found")
-                            PlayerManager.sharedInstance.Players[playerField].totalDeaths = stat["value"] as! Int
+                            PlayerManager.sharedInstance.Players[playerField].totalDeaths = stat["value"] as! Double
                         }
                         if stat["name"] as! String == "total_time_played" {
                             print("total deaths found")
-                            PlayerManager.sharedInstance.Players[playerField].timePlayed = stat["value"] as! Int
+                            PlayerManager.sharedInstance.Players[playerField].timePlayed = stat["value"] as! Double
                         }
                         if stat["name"] as! String == "total_shots_fired" {
                             print("total deaths found")
-                            PlayerManager.sharedInstance.Players[playerField].totalShots = stat["value"] as! Int
+                            PlayerManager.sharedInstance.Players[playerField].totalShots = stat["value"] as! Double
                         }
                         if stat["name"] as! String == "total_shots_hit" {
                             print("total deaths found")
-                            PlayerManager.sharedInstance.Players[playerField].totalHits = stat["value"] as! Int
+                            PlayerManager.sharedInstance.Players[playerField].totalHits = stat["value"] as! Double
                         }
                         
 //                        if stat["name"] as! String == "total_deaths" {
@@ -142,7 +141,7 @@ class ViewController: UIViewController {
             }
         
         }).resume()
-        return player
+//        return player
     }
     
     // http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=271A36B05E4810BE4F387CF3686EFD2A&steamid=76561197970607640
