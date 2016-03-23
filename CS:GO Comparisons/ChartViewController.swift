@@ -47,7 +47,6 @@ class ChartViewController: UIViewController, ChartViewDelegate {
         var dataEntries: [BarChartDataEntry] = []
         var dataEntries2: [BarChartDataEntry] = []
         barChartView.rightAxis.enabled = false
-        barChartView.drawValueAboveBarEnabled = false
         for i in 0..<dataPoints.count {
             let dataEntry = BarChartDataEntry(value: values[i], xIndex: i)
             dataEntries.append(dataEntry)
@@ -66,7 +65,7 @@ class ChartViewController: UIViewController, ChartViewDelegate {
         
         let chartData = BarChartData(xVals: metrics, dataSets: dataSets)
         barChartView.data = chartData
-        
+        barChartView.xAxis.setLabelsToSkip(0)
         barChartView.descriptionText = "Stat comparison between players"
         
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .EaseInBounce)
