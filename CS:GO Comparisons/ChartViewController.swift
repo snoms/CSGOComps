@@ -21,14 +21,9 @@ class ChartViewController: UIViewController, ChartViewDelegate {
     override func viewDidLoad() {
         
         metrics = ["Kills", "Deaths", "Shots", "Hits", "Time Played (min)"]
-        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
-        let unitsBought = [30.0, 0.0, 20.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
-        
         var player1Data: [Double] = []
         var player2Data: [Double] = []
 
-        
         player1Data.append(PlayerManager.sharedInstance.Players[0].totalKills)
         player2Data.append(PlayerManager.sharedInstance.Players[1].totalKills)
         player1Data.append(PlayerManager.sharedInstance.Players[0].totalDeaths)
@@ -40,16 +35,8 @@ class ChartViewController: UIViewController, ChartViewDelegate {
         player1Data.append(PlayerManager.sharedInstance.Players[0].timePlayed)
         player2Data.append(PlayerManager.sharedInstance.Players[1].timePlayed)
 
-        
-//        for i in 0..<player1Data.count {
-//            dataEntries.append(player1Data[i])
-//        }
-//        
-        
-        
         setChart(metrics, values: player1Data, values2: player2Data)
     }
-    
     
     var months: [String]!
     var metrics: [String]!
@@ -59,7 +46,8 @@ class ChartViewController: UIViewController, ChartViewDelegate {
 
         var dataEntries: [BarChartDataEntry] = []
         var dataEntries2: [BarChartDataEntry] = []
-        
+        barChartView.rightAxis.enabled = false
+        barChartView.drawValueAboveBarEnabled = false
         for i in 0..<dataPoints.count {
             let dataEntry = BarChartDataEntry(value: values[i], xIndex: i)
             dataEntries.append(dataEntry)
@@ -70,8 +58,9 @@ class ChartViewController: UIViewController, ChartViewDelegate {
             dataEntries2.append(dataEntry)
         }
         
-        let chartDataSet1 = BarChartDataSet(yVals: dataEntries, label: "Units Sold")
-        let chartDataSet2 = BarChartDataSet(yVals: dataEntries2, label: "Units bought")
+        let chartDataSet1 = BarChartDataSet(yVals: dataEntries, label: "Player 1")
+        chartDataSet1.setColor(UIColor.redColor())
+        let chartDataSet2 = BarChartDataSet(yVals: dataEntries2, label: "Player 2")
         
         let dataSets = [chartDataSet1, chartDataSet2]
         
@@ -82,10 +71,4 @@ class ChartViewController: UIViewController, ChartViewDelegate {
         
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .EaseInBounce)
     }
-    
-    
-    
-    
-    
-    
 }

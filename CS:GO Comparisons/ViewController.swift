@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBAction func fillExamples(sender: AnyObject) {
         inputField1.text = "76561197970607640"
-        inputField2.text = "76561197970607640"
+        inputField2.text = "76561197990988488"
     }
     
     
