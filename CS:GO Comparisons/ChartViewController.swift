@@ -20,7 +20,7 @@ class ChartViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         
-        metrics = ["Kills", "Deaths"]
+        metrics = ["Kills", "Deaths", "Shots", "Hits", "Time Played (min)"]
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
         let unitsBought = [30.0, 0.0, 20.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
@@ -28,13 +28,18 @@ class ChartViewController: UIViewController, ChartViewDelegate {
         var player1Data: [Double] = []
         var player2Data: [Double] = []
 
-        PlayerManager.sharedInstance.Players[0].totalKills = PlayerManager.sharedInstance.Players[0].totalKills
         
         player1Data.append(PlayerManager.sharedInstance.Players[0].totalKills)
         player2Data.append(PlayerManager.sharedInstance.Players[1].totalKills)
         player1Data.append(PlayerManager.sharedInstance.Players[0].totalDeaths)
         player2Data.append(PlayerManager.sharedInstance.Players[1].totalDeaths)
-        
+        player1Data.append(PlayerManager.sharedInstance.Players[0].totalShots)
+        player2Data.append(PlayerManager.sharedInstance.Players[1].totalShots)
+        player1Data.append(PlayerManager.sharedInstance.Players[0].totalHits)
+        player2Data.append(PlayerManager.sharedInstance.Players[1].totalHits)
+        player1Data.append(PlayerManager.sharedInstance.Players[0].timePlayed)
+        player2Data.append(PlayerManager.sharedInstance.Players[1].timePlayed)
+
         
 //        for i in 0..<player1Data.count {
 //            dataEntries.append(player1Data[i])

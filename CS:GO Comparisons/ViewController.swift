@@ -112,7 +112,9 @@ class ViewController: UIViewController {
                         }
                         if stat["name"] as! String == "total_time_played" {
                             print("total deaths found")
-                            PlayerManager.sharedInstance.Players[playerField].timePlayed = stat["value"] as! Double
+                            var hoursPlayed = stat["value"] as! Double
+                            hoursPlayed = hoursPlayed/60
+                            PlayerManager.sharedInstance.Players[playerField].timePlayed = hoursPlayed as! Double
                         }
                         if stat["name"] as! String == "total_shots_fired" {
                             print("total deaths found")
