@@ -11,14 +11,10 @@ import Foundation
 public class Player {
     
     public var steamID: String
-//    var userID: String
-    
     public var totalKills: Double
     public var totalDeaths: Double
     public var timePlayed: Double
-    
     public var gunStats: Array<Gun>
-    
     public var totalShots: Double
     public var totalHits: Double
     

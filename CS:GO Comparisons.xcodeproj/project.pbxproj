@@ -12,7 +12,6 @@
 		CC48525A1C9DB8D800F7AE22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4852581C9DB8D800F7AE22 /* Main.storyboard */; };
 		CC48525C1C9DB8D800F7AE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC48525B1C9DB8D800F7AE22 /* Assets.xcassets */; };
 		CC48525F1C9DB8D800F7AE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC48525D1C9DB8D800F7AE22 /* LaunchScreen.storyboard */; };
-		CC4852671C9DC73E00F7AE22 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4852661C9DC73E00F7AE22 /* ResultViewController.swift */; };
 		CC4852691C9DEA7000F7AE22 /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4852681C9DEA7000F7AE22 /* PlayerData.swift */; };
 		CC48526D1C9DFDAF00F7AE22 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48526C1C9DFDAF00F7AE22 /* PlayerManager.swift */; };
 		CC7BEE1E1CA0A06E00A9E24E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7BEE1D1CA0A06E00A9E24E /* ChartViewController.swift */; };
@@ -81,7 +80,6 @@
 		CC48525B1C9DB8D800F7AE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC48525E1C9DB8D800F7AE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4852601C9DB8D800F7AE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC4852661C9DC73E00F7AE22 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		CC4852681C9DEA7000F7AE22 /* PlayerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
 		CC48526C1C9DFDAF00F7AE22 /* PlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
 		CC7BEE1D1CA0A06E00A9E24E /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				CC3E2DDB1CA0A38E00602E26 /* Charts.xcodeproj */,
 				CC4852541C9DB8D800F7AE22 /* AppDelegate.swift */,
 				CC4852561C9DB8D800F7AE22 /* ViewController.swift */,
-				CC4852661C9DC73E00F7AE22 /* ResultViewController.swift */,
 				CC7BEE1D1CA0A06E00A9E24E /* ChartViewController.swift */,
 				CC4852681C9DEA7000F7AE22 /* PlayerData.swift */,
 				CC48526C1C9DFDAF00F7AE22 /* PlayerManager.swift */,
@@ -259,7 +256,6 @@
 				CC48526D1C9DFDAF00F7AE22 /* PlayerManager.swift in Sources */,
 				CC4852551C9DB8D800F7AE22 /* AppDelegate.swift in Sources */,
 				CC4852691C9DEA7000F7AE22 /* PlayerData.swift in Sources */,
-				CC4852671C9DC73E00F7AE22 /* ResultViewController.swift in Sources */,
 				CC7BEE1E1CA0A06E00A9E24E /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
