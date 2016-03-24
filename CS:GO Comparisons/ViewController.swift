@@ -15,8 +15,9 @@ class ViewController: UIViewController {
     
     @IBAction func fillExamples(sender: AnyObject) {
         inputField1.text = "76561197970607640"
-        inputField2.text = "76561197990988488"
+        inputField2.text = "76561198091490766"
     }
+    
     
     
     @IBAction func showComparison(sender: AnyObject) {
@@ -27,10 +28,7 @@ class ViewController: UIViewController {
         if inputField1.text != "" {
             performGetRequest(0)
 //            PlayerManager.sharedInstance.newPlayer(player1)
-            print(player1.totalKills)
-            print("if field 1 ok")
             print(PlayerManager.sharedInstance.Players[0].totalKills)
-
         }
         
         if inputField2.text != "" {
@@ -49,7 +47,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("reached initial screen")
+        inputField1.placeholder = "Steam64 ID"
+        inputField2.placeholder = "Steam64 ID"
     }
 
     override func didReceiveMemoryWarning() {
