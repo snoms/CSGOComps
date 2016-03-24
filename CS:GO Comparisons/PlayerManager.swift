@@ -13,6 +13,7 @@ class PlayerManager {
     static let sharedInstance = PlayerManager()
     
     var Players: Array<Player> = []
+    
     var Player1 = Player(steamID: "0")
     var Player2 = Player(steamID: "0")
 
