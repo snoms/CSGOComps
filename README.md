@@ -2,6 +2,9 @@
 
 CSGO Comps is a simple app to compare player statistics for two Counter-Strike: Global Offensive players.
 
+#### Required dependencies
+For some reason I could not incorporate iOS-Charts into my git, so including it both in the Project Folder & Embedded Binaries is required.  
+
 #### Features
 
 - View and compare one or two CS:GO players
